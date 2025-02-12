@@ -13,11 +13,11 @@ describe('mockttp', () => {
     });
 
     it('should mock http', async () => {
-        await fetch(server.url + '/1');
-        await fetch(server.url + '/2');
+        await fetch(server.url);
+        await fetch(server.url);
     });
 
     it('should mock http', async () => {
-        await fetch(server.url + '/3');
+        await fetch(server.url);
     });
 });
