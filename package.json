@@ -9,7 +9,6 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "cross-fetch": "latest",
     "jest": "latest",
     "mockttp": "latest"
   }

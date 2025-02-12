@@ -1,5 +1,4 @@
 const {getLocal} = require('mockttp');
-const fetch = require('cross-fetch');
 
 const server = getLocal();
 
@@ -14,10 +13,11 @@ describe('mockttp', () => {
     });
 
     it('should mock http', async () => {
-        await fetch(server.url);
+        await fetch(server.url + '/1');
+        await fetch(server.url + '/2');
     });
 
     it('should mock http', async () => {
-        await fetch(server.url);
+        await fetch(server.url + '/3');
     });
 });
